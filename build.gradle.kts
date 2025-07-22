@@ -19,6 +19,10 @@ tasks.test {
     useJUnitPlatform()
 }
 
-//application {
-//    mainClass.set("com.technogise.assesment.Main")
-//}
+tasks.jar {
+    manifest {
+        attributes(
+            "Main-Class" to "com.technogise.assesment.app.Application"
+        )
+    }
+}
