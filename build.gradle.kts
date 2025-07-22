@@ -13,6 +13,7 @@ repositories {
 dependencies {
     // JUnit 5
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+    testImplementation("org.mockito:mockito-core:5.5.0")
 }
 
 tasks.test {

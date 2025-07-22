@@ -1,13 +1,13 @@
 package com.technogise.assesment.logic;
 
-import com.technogise.assesment.core.Board;
+import com.technogise.assesment.board.Board;
 
 import java.util.Map;
 
 public class DefaultGameLogic implements GameLogic {
 
     @Override
-    public int getFinalPosition(Board board, int position) {
+    public int determineFinalPosition(Board board, int position) {
         Map<Integer, Integer> ladders = board.getLadders();
         Map<Integer, Integer> snakes = board.getSnakes();
 

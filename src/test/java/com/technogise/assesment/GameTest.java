@@ -1,10 +1,11 @@
 package com.technogise.assesment;
 
-import com.technogise.assesment.core.Board;
-import com.technogise.assesment.core.BoardFactory;
-import com.technogise.assesment.core.Game;
-import com.technogise.assesment.logic.DefaultGameLogic;
+import com.technogise.assesment.board.Board;
+import com.technogise.assesment.board.BoardFactory;
+import com.technogise.assesment.game.Game;
+import com.technogise.assesment.game.GameFactory;
 import com.technogise.assesment.logic.GameLogic;
+import com.technogise.assesment.logic.GameLogicFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -18,9 +19,9 @@ class GameTest {
 
     @BeforeEach
     void setUp() {
-        board = BoardFactory.createStandardBoard();
-        gameLogic = new DefaultGameLogic();
-        game = new Game(board, gameLogic);
+        board = BoardFactory.createBoard();
+        gameLogic = GameLogicFactory.getDefaultGameLogic();
+        game = GameFactory.createGame(board, gameLogic);
     }
 
     @Test

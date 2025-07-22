@@ -1,7 +1,7 @@
 package com.technogise.assesment.logic;
 
-import com.technogise.assesment.core.Board;
+import com.technogise.assesment.board.Board;
 
 public interface GameLogic {
-    int getFinalPosition(Board board, int position);
+    int determineFinalPosition(Board board, int position);
 }
