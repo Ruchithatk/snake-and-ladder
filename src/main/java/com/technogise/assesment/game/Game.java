@@ -37,7 +37,7 @@ public class Game {
     }
 
     private static int handleWinningPosition() {
-        System.out.println("Yay!! You won!!");
+        System.out.println("You won!!");
         return Board.WINNING_POSITION;
     }
 

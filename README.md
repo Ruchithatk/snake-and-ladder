@@ -16,7 +16,7 @@ Usage:
 - Ensure you have Java 17+ installed.
 - Import the project into an IDE (IntelliJ IDEA recommended).
 - Build the project using Gradle by running `./gradlew build` in the terminal.
-- Run the `Main` class to start the game.
+- To start the Game, run the `Application` class in the IDE or execute the built JAR file from the terminal using `java -jar build/libs/snakes-and-ladders-1.0.jar`.
 - Input the current position and dice roll value when prompted.(e.g., `5,3` for position 5 and dice roll 3).
 - Output will be displayed in the console.
 - Type `exit` to terminate the game forcefully.

@@ -27,7 +27,7 @@ class ApplicationIntegrationTest {
         assertTrue(output.contains("Enter input:"));
         assertTrue(output.contains("Error: Current Position must be between 0 and 99"));
         assertTrue(output.contains("Error: Dice roll must be between 1 and 6"));
-        assertTrue(output.contains("Error: Please enter valid integers for current position and dice roll"));
+        assertTrue(output.contains("Error: Please enter valid integers for both current position and dice roll"));
         assertTrue(output.contains("Please enter in correct format: currentPosition,diceRoll (e.g., 34,3)"));
         assertTrue(output.contains("New position: 85"));
         assertTrue(output.contains("Type 'exit' to quit."));

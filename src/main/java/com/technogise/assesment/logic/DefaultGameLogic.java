@@ -12,10 +12,10 @@ public class DefaultGameLogic implements GameLogic {
         Map<Integer, Integer> snakes = board.getSnakes();
 
         if (ladders.containsKey(position)) {
-            System.out.println("Ladder up from " + position + " to " + ladders.get(position));
+            System.out.println("Ladder Climb! Up from " + position + " to " + ladders.get(position));
             return ladders.get(position);
         } else if (snakes.containsKey(position)) {
-            System.out.println("Snake down from " + position + " to " + snakes.get(position));
+            System.out.println("Snake Bite! Down from " + position + " to " + snakes.get(position));
             return snakes.get(position);
         }
         return position;

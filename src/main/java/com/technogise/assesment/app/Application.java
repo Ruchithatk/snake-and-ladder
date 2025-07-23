@@ -50,7 +50,7 @@ public class Application {
                 System.out.println("Example format: currentPosition,diceRoll (e.g., 34,3)");
             }
             catch (NumberFormatException e) {
-                System.out.println("Error: Please enter valid integers for current position and dice roll.");
+                System.out.println("Error: Please enter valid integers for both current position and dice roll.");
                 System.out.println("Example format: currentPosition,diceRoll (e.g., 34,3)");
             }
             catch (Exception e) {
